@@ -1,0 +1,378 @@
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+/* -------------html---------------- */
+html {
+    scroll-behavior: smooth;
+    background-color: var(--body-color);
+    color: var(--color-black);
+}
+/* ----------------dark color -------------- */
+:root {
+    --body-color: rgb(0, 0, 13);
+    --color-white: rgb(0, 0, 0);
+    --color-black: rgb(255, 255, 255);
+    --primary-color: rgb(138, 100, 243);
+    --secondary-color: rgb(255, 255, 255);
+    --gray-color: #646464;
+    --border-color: rgb(174, 174, 174);
+    --footer-color: rgb(15 15 28);
+}
+
+/* ----------------root light color-------------- */
+body.light {
+    --body-color: rgb(255, 255, 255);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+    --primary-color: rgb(30, 159, 171);
+    --secondary-color: #1E1E1E;
+    --gray-color: #e1e1e1;
+    --border-color: rgb(187, 187, 187);
+    --footer-color: #F8F8F8;
+    
+}
+
+body {
+    transition: all 0.3s ease;
+    background-color: var(--body-color);
+    color: var(--color-black);
+}
+
+/* -----------toggle switch------------ */
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: var(--gray-color);
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
+.fa-moon {color: rgb(15 15 28) !important;
+font-size: 14px;}
+
+.fa-sun {color: #ffbb00 !important;
+font-size: 14px;
+padding: 0px !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*------------ footer start --------- */
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: var(--footer-color);
+    padding-block: 40px 60px;
+}
+
+.top-footer p {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.middle-footer .footer-menu {
+    display: flex;
+}
+
+.footer_menu_list {
+    list-style: none;
+}
+
+.footer_menu_list a {
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    margin-inline: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-footer p a {
+    color: var(--secondary-color);
+
+}
+
+.footer_menu_list a:hover {
+    color: var(--primary-color);
+}
+
+/* -------------MEDIA QUERY------------ */
+@media only screen and (max-width: 1180px) {
+    .section {
+        height: fit-content;
+    }
+
+    .nav-bar {
+        margin-right: 0;
+        gap: 4vw;
+    }
+
+    .nav-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navcvbtn {
+        display: none;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        margin-top: 15vh;
+        width: auto;
+        justify-content: center;
+    }
+
+    .myimage {
+        width: 300px;
+    }
+
+    .featured-textbox {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .typedtext {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .social-icons {
+        margin-top: 1em;
+    }
+
+    .up-comingproject img,
+    .cutm-colne img {
+        border-radius: 10px;
+        width: 80%;
+        height: 70%;
+    }
+
+    .up-comingproject img,
+    .cutm-colne img {
+        border-radius: 10px;
+        width: 80%;
+        height: 65%;
+    }
+
+    .cutm-colne,
+    .up-comingproject {
+        width: 290px;
+        height: 360px;
+
+
+    }
+
+    .github:hover {
+        color: var(--color-white);
+        background-color: var(--secondary-color);
+    }
+    .article-container {
+        gap: 3vw;
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-bar {
+        gap: 2vw;
+    }
+
+    .article-container {
+        font-size: 14px;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .menulines {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .checkbox-label {
+        width: 45px;
+        height: 22px;
+
+    }
+
+    .checkbox-label .ball {
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .checkbox:checked+.checkbox-label .ball {
+        transform: translateX(23px);
+    }
+
+    .nav-logo {
+        font-size: 23px;
+    }
+
+    .wrapper {
+        padding-inline: 4vw;
+    }
+
+    .featured-image {
+        margin-top: 15vh;
+        width: auto;
+        justify-content: center;
+    }
+
+    .myimage {
+        width: 300px;
+    }
+
+    .featured-textbox {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .typedtext {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .social-icons {
+        margin-top: 1em;
+        justify-content: center;
+    }
+
+    .about-header {
+        margin-block: 2vh;
+    }
+
+    .about-skill-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .introduction {
+        width: auto;
+        box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+    }
+
+    .skill-box {
+        width: auto;
+        box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+    }
+    article {
+        width: 8rem;
+    }
+    .project-header {
+        margin-block: 5vh;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .aboutme {
+        font-weight: 500;
+        text-align: start;
+    }
+
+    .name {
+        display: none
+    }
+
+    .bottom-footer {
+        text-align: center;
+    }
+
+    .working-on {
+        border: none;
+        box-shadow: none;
+    }
+
+    .cutm-colne h3 {
+        font-size: 20px;
+    }
+
+    .up-comingproject img,
+    .cutm-colne img {
+        border-radius: 10px;
+
+    }
+
+    .up-comingproject img,
+    .cutm-colne img {
+        border-radius: 10px;
+        width: 80%;
+        height: 65%;
+    }
+
+    .cutm-colne,
+    .up-comingproject {
+        width: 290px;
+        height: 360px;
+
+    }
+
+    .contact-info {
+        color: var(--primary-color);
+    }
+
+}

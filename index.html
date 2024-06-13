@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to sandeep kr chaurasiya's portfolio website, where creativity meets functionality. Explore a curated collection of my finest works, showcasing expertise in Web Devlopment and software Devlopment. From sleek designs to captivating visuals, each project reflects a dedication to innovation and client satisfaction. Discover how I can elevate your brand's presence with tailored solutions and cutting-edge design. Let's collaborate and bring your vision to life. Browse now!">
+    <title>Sandeep Kr Chauraisya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/skill.css">
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/sandeep.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <p class="nav-name"> Sandeep Chaurasiya</p>
+            </div>
+            <ul class="nav-bar">
+                <li class="nav-section "><i class="fa-solid fa-house"></i><a href="#home"
+                        class="nav-link active-link">Home</a></li>
+                <li class="nav-section  "><i class="fa-solid fa-address-card"></i><a href="#about"
+                        class="nav-link">About</a>
+                </li>
+                <li class="nav-section  "><i class="fa-solid fa-list-check"></i><a href="#project"
+                        class="nav-link">Projects</a>
+                </li>
+                <li class="nav-section  "><i class="fa-solid fa-envelope"></i><a href="#contact"
+                        class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <div class="nav-button">
+                        <a href="https://drive.google.com/drive/folders/134jdpoy2_s2CRmJHthoZm_PsbGVnXbdN?usp=sharing"
+                            class="navcv-link"> <button class="navcvbtn">
+                                <i class="fa-solid fa-file"></i>Download CV</button> </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox1">
+                        <label for="checkbox1" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="menulines">
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox2">
+                    <label for="checkbox2" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <button class="menulinebtn" aria-label="menu button" onclick="toggleNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+
+        <div class="hidden-navbar" id="hiddenNavbar">
+            <ul class="hidden-navbar-options">
+                <li><i class="fa-solid fa-house"></i><a href="#home" class="nav-link activelink">Home</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#about" class="nav-link">About</a>
+                </li>
+                <li><i class="fa-solid fa-list-check"></i><a href="#project" class="nav-link">Projects</a>
+                </li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <section class="section" id="home">
+            <div class="featured-image">
+                <div class="selfimage">
+                    <img class="myimage" src="images/sandeep.jpg" alt="avatar">
+                    <div class="name">
+                        <span>Sandeep Kumar Chaurasiya</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-textbox">
+                <div class="typedtext">
+                    <p>I'm <span class="typedText"></span></p>
+                    </p>
+                </div>
+                <div class="aboutme">
+                    <p>Experienced frontend developer with a passion for creating visually stunning and
+                        user-friendly
+                        websites.</p>
+                </div>
+                <div class="buttons">
+                    <button class="hireme-btn"><a href="mailto:sandeepkr11320@gmail.com">Hire me</a></button>
+                    <a href="https://drive.google.com/drive/folders/134jdpoy2_s2CRmJHthoZm_PsbGVnXbdN?usp=sharing">
+                        <button class="cv-link"><i class="fa-solid fa-file"></i>Download CV</button></a>
+
+                    <div class="social-icons">
+                        <div class="icon"><a href="https://www.linkedin.com/in/sandeep-kumar-5334132b3/"
+                                aria-label="linkedin link"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div class="icon"><a href="https://github.com/sandeep-kr-chaurasiya" aria-label="github link"
+                                target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="icon"><a href="https://twitter.com/Sandeep48190126" aria-label="twitter link"
+                                target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section" id="about">
+            <div class="aboutelement">
+                <div class="about-header">About Me </div>
+                <div class="about-skill-container">
+                    <div class="introduction">
+                        <h4 class="introheader">My Introduction <i class="fa-solid fa-exclamation"></i> </h4>
+                        <div class="image">
+                            <img src="Assets/laptop.png" alt="laptop image">
+                        </div>
+                        <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge frameworks and
+                            libraries,which allows me to implement interactive features. Additionally, I have
+                            experirence
+                            working with content management systems (CMS) like WordPress.
+                        </p>
+                    </div>
+                    <!---------- skill box ------->
+                    <div class="skill-box">
+                        <h4 class="skillheader">Skills <i class="fa-solid fa-screwdriver-wrench"></i></h4>
+                        <div class="article-container">
+                            <article>
+                                <img src="Assets/html.png" alt="html" width="40" height="40" style="max-width: 100%;">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/css.png" alt="css3" width="40" height="40" style="max-width: 100%;">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/js.png" height="40" alt="Experience icon" />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/nodejs.png" height="40" alt="Experience icon" />
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/c.png" alt="c" width="40" height="40" />
+                                <div>
+                                    <h3>C</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="Assets/cpp.png" alt="cplusplus" width="40" height="40"
+                                    style="max-width: 100%;">
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="Assets/dsa.jpg" width="40" height="40" style="max-width: 100%;"
+                                    alt="Experience icon" />
+                                <div>
+                                    <h3>DSA</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/sql.png" alt="mssql" width="40" height="40" />
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/aws.jpg" alt="aws" width="40" height="40" />
+                                <div>
+                                    <h3>AWS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="Assets/linux.png" alt="linux image" width="40" height="40"
+                                    style="max-width: 100%;" />
+                                <div>
+                                    <h3>Linux</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="project">
+            <div class="project-header">Projects </div>
+            <!---------- project box ------->
+            <div class="project-container">
+                <div class="completed-projects">
+                    <h4>Completed projects <i class="fa-solid fa-suitcase"></i></h4>
+                    <div class="project-wrapper">
+
+                        <div class="cutm-colne">
+                            <img src="Assets/cutmclone.png" alt="cutm clone image">
+                            <h3> University website clone</h3>
+                            <a class="github" href="https://github.com/Sandeep269">Github</a>
+
+                        </div>
+
+                        <div class="up-comingproject">
+                            <img src="Assets/myportfolio.png" alt="portfolio image">
+                            <h3>My own portfolio </h3>
+                            <a class="github" href="https://github.com/sandeep-kr-chaurasiya/My-portfolio">Github</a>
+                        </div>
+                        <div class="up-comingproject">
+                            <img src="Assets/question.png" alt="question image">
+                            <h3>up coming project </h3>
+                            <a class="github" href="https://github.com/Sandeep269">Github</a>
+                        </div>
+                        <div class="up-comingproject">
+                            <img src="Assets/question.png" alt="question image">
+                            <h3>up coming project </h3>
+                            <a class="github" href="https://github.com/Sandeep269">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Connect With me </h1>
+                <span>If you have any project in your mind, contact me here</span>
+            </div>
+            <div class="contact-box">
+                <div class="contact-element">
+                    <div class="contact-info">
+                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i><a
+                                href="mailto:sandeepkr11320@gmail.com">sandeepkr11320@gmail.com</a></p>
+                        <p><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/+916287546241">Whatsapp me </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-element">
+                    <div class="form-control" id="myForm">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
+                            <input type="hidden" name="access_key" value="594b87b1-9e26-4ba3-87f5-297ad095aa66">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" name="name" placeholder="Name" required>
+                                <input type="email" class="input-field2" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" required placeholder="message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn" id="submitButton" type="submit">Send <i
+                                        class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                        <div id="result" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="top-footer">
+            <p>sandeep Kumar Chaurasiya</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#project">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.linkedin.com/in/sandeep-kumar-5334132b3/"
+                    aria-label="linkedin link "><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="icon"><a href="https://github.com/sandeep-kr-chaurasiya" aria-label="github link"
+                    target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            <div class="icon"><a href="https://x.com/Sandeep48190126?t=PA3CObl3Hc0CDKlQNboCAw&s=09"
+                    aria-label="twitter link" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="icon"><a href="https://www.instagram.com/sandeep_kr_chaurasiya/" aria-label="instgram link"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy;<a href="#home" style="text-decoration: none;">sandeep Kumar Chaurasiya</a> - All
+                rights reserved
+            </p>
+        </div>
+    </footer>
+    <!----------------TYPING Text  JS Link------------------->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS Link----- -->
+<script src="script.js"></script>
+</body>
+
+</html>

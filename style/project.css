@@ -1,0 +1,94 @@
+
+/* ------------PROJECT SECTION------------------  */
+.project-header {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-block: 10vh;
+}
+
+/*------------------ project box ------------  */
+#project {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.completed-projects {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+}
+
+.project-wrapper {
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.completed-projects h4 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+/*--------------- each project ---------------*/
+.cutm-colne,
+.up-comingproject {
+    /* background-color: var(--primary-color); */
+    margin-block: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 260px;
+    height: 360px;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 10px;
+
+}
+
+.cutm-colne h3,
+.up-comingproject h3,
+.working-project h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-block: 2px;
+    color: var(--color-black);
+}
+
+.cutm-colne a,
+.up-comingproject a {
+    margin-block: 4px;
+
+}
+
+.up-comingproject img,
+.cutm-colne img {
+    border-radius: 10px;
+    width: 85%;
+    height: 60%;
+}
+
+/* github button  */
+.github {
+    color: var(--color-white);
+    text-decoration: none;
+    /* border: 1.5px solid var(--border-color); */
+    border-radius: 25px;
+    padding: 8px 20px 8px 20px;
+    background-color: var(--secondary-color);
+    transition: all ease 0.3s;
+}
+
+.github:hover {
+    color: var(--color-black);
+    background-color: var(--gray-color);
+}
