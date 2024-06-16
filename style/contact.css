@@ -1,0 +1,167 @@
+/* --------------------------------CONTACT------------------------  */
+.top-header {
+    text-align: center;
+    margin-block: 10vh;
+}
+
+.contact-box {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    /* background-color: var(--color-white); */
+}
+
+.contact-element {
+    display: flex;
+    width: 475px;
+}
+
+.contact-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 315px;
+    /* background: var(--color-white); */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+.contact-info:hover {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+}
+
+.contact-info:hover p,
+.contact-info:hover a {
+    color: var(--color-white);
+}
+
+.contact-info>h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info>p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-color);
+    margin-block: 5px;
+}
+
+.contact-info>p>a {
+    /* text-decoration: none; */
+    color: var(--secondary-color)
+}
+
+.contact-info p>i {
+    font-size: 20px;
+}
+
+/* ----- CONTACT FORM ----- */
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    /* background-color: var(--color-white); */
+}
+
+.form-inputs {
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.input-field {
+    width: 35%;
+    height: 55px;
+    background: transparent;
+    color: var(--color-black);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+
+.input-field2 {
+    width: 65%;
+    height: 55px;
+    background: transparent;
+    color: var(--color-black);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    color: var(--color-black);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: var(--gray-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn>i {
+    margin-left: 10px;
+}
+
+.form-button {
+    justify-content: end;
+    display: flex;
+}
+
+.form-button>.btn {
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
+}
+
+.form-button>.btn:hover {
+    color: var(--color-white);
+    background: var(--primary-color);
+}
+
+.form-button i {
+    font-size: 18px;
+    rotate: -45deg;
+}
+
+#contact {
+    flex-direction: column;
+}

@@ -1,0 +1,187 @@
+/* ------------PROJECT SECTION------------------  */
+.project-header {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-block: 10vh;
+}
+
+/*------------------ project box ------------  */
+#project {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.completed-projects {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 0px 0px 20px 5px rgba(103, 103, 103, 0.25);
+}
+
+.project-wrapper {
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.completed-projects h4 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+/*--------------- each project ---------------*/
+
+.up-comingproject {
+    /* background-color: var(--primary-color); */
+    /* margin-block: 10px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 386px;
+    height: 410px;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 10px;
+}
+
+.bgcard {
+    position: relative;
+    width: 230px;
+    height: 295px;
+    background-color: var(--white--);
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.bgcard::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, rgb(30, 159, 171) 25%, rgb(247, 45, 93) 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(40px);
+}
+
+.card {
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #111;
+    --main-color: #fefefe;
+    width: 200px;
+    height: 254px;
+    background: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* inside css  */
+.card-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-block: 10px;
+}
+
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-title h3 {
+    font-size: 15px;
+    color: var(--font-color-sub);
+}
+.card-title span {
+    font-size: 15px;
+    color: var(--font-color-sub);
+}
+
+.card-socials {
+    display: flex;
+    height: 0;
+    opacity: 0;
+    margin-top: 20px;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.card:hover>.card-socials {
+    opacity: 1;
+    height: 35px;
+}
+
+.card-photo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.tapbuttons {
+    margin-block: 15px;
+}
+
+/* github button  */
+.github {
+    color: var(--white--);
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    transition: all ease 0.3s;
+}
+
+.github:hover {
+    padding: 8px 30px 8px 30px;
+    background-color: var(--primary-color);
+}
+
+/* live  button  */
+.live {
+    color: var(--white--);
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 8px 20px 8px 20px;
+    background-color: var(--red--);
+    transition: all ease 0.3s;
+}
+
+.live:hover {
+    padding: 8px 30px 8px 30px;
+    background-color: var(--red--);
+
+}
+.lang{
+    color: var(--font-color-sub);
+    font-size: 9px;
+}
