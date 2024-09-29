@@ -31,7 +31,7 @@ checkbox2.addEventListener("change", () => {
 
 /*-------------------------------TYPING EFFECT----------------------------*/
 let typingEffect = new Typed(".typedText", {
-  strings: ["App Developer","Software Developer", "Designer"],
+  strings: ["Web Developer","Software Developer", "Designer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
