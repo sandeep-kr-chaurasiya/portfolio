@@ -20,7 +20,7 @@
 .introduction {
     height: fit-content;
     width: 38%;
-    padding: 45px;
+    padding: 25px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -43,4 +43,7 @@
 .image img {
     width: 60%;
     margin-block: 15px;
+}
+.aboutparagraph{
+    text-align: center;
 }

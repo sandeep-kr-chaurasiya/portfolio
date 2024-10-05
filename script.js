@@ -31,11 +31,11 @@ checkbox2.addEventListener("change", () => {
 
 /*-------------------------------TYPING EFFECT----------------------------*/
 let typingEffect = new Typed(".typedText", {
-  strings: ["Web Developer","Software Developer", "Designer"],
+  strings: ["App Developer","Software Developer", "Designer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
-  backDelay: 3000
+  backDelay: 4000
 })
 
 /* ----------------------CHANGE ACTIVE LINK---------------------- */
@@ -72,13 +72,7 @@ const sr = ScrollReveal({
   reset: true
 })
 
-/* -- HOME -- */
-sr.reveal('.name', {})
-sr.reveal('.typedtext', { delay: 100 })
-sr.reveal('.aboutme', { delay: 200 })
-sr.reveal('.buttons', { delay: 200 })
-sr.reveal('.social_icons', { delay: 200 })
-sr.reveal('.selfimage', { delay: 300 })
+
 sr.reveal('.introduction', { delay: 100 })
 sr.reveal('.skill-box', { delay: 100 })
 

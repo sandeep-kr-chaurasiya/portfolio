@@ -270,7 +270,7 @@ footer {
 
     .typedtext {
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .social-icons {
@@ -308,8 +308,8 @@ footer {
     }
 
     .aboutme {
-        font-weight: 500;
-        text-align: start;
+        font-weight: 400;
+        text-align: center;
     }
 
     .name {
