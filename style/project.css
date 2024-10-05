@@ -22,7 +22,7 @@
 }
 
 .project-wrapper {
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -47,51 +47,42 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: auto;
-    width: 386px;
-    height: 410px;
+    width: 350px;
+    height: 470px;
     /* border: 1px solid var(--border-color); */
     border-radius: 10px;
 }
 
 .bgcard {
     position: relative;
-    width: 230px;
-    height: 295px;
+    width: 100%;
+    height: 100%;
     background-color: var(--white--);
     border: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12px;
+    padding: 20px;
     gap: 12px;
     border-radius: 15px;
     cursor: pointer;
     color: #000000;
 }
 
-.bgcard::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, rgb(30, 159, 171) 25%, rgb(247, 45, 93) 100%);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(40px);
-}
 
 .card {
     --font-color: #fefefe;
     --font-color-sub: #7e7e7e;
     --bg-color: #111;
     --main-color: #fefefe;
-    width: 200px;
-    height: 254px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
     background: transparent;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 /* inside css  */
@@ -109,6 +100,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.kittunes{
+    padding: 10px;
 }
 
 .card-title {
@@ -130,16 +124,10 @@
 
 .card-socials {
     display: flex;
-    height: 0;
-    opacity: 0;
-    margin-top: 20px;
-    gap: 20px;
-    transition: 0.5s;
-}
-
-.card:hover>.card-socials {
     opacity: 1;
-    height: 35px;
+    margin-top: 15px;
+    gap: 10px;
+    transition: 0.8s;
 }
 
 .card-photo:hover {
@@ -184,4 +172,16 @@
 .lang{
     color: var(--font-color-sub);
     font-size: 9px;
+    margin-bottom: 10px;
+}
+.description{
+    color: var(--gray-color);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 790px) {
+    .description{
+        color: var(--gray-color);
+        font-size: 12px;
+    }
 }
