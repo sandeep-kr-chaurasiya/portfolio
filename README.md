@@ -4,6 +4,7 @@ Welcome to my portfolio website! Here you will find a curated selection of my wo
 
 ## Features
 
+
 - **Home**: Introduction to who I am, with a brief overview of my skills and expertise.
 - **About**: Detailed information about my background, skills, and experience in web development and other technologies.
 - **Projects**: A showcase of my completed projects including:
